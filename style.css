@@ -654,6 +654,30 @@ input, textarea{
     background: rgba(255,255,255,.03);
   }
 }
+/* ===== BIGGER LOGO ===== */
+
+/* Topbar logo */
+.site-logo{
+  height: 80px;        /* كان صغير → كبرناه */
+  width: auto;
+  display: block;
+}
+
+/* Hero big logo */
+.hero__logo{
+  height: 220px;       /* الحجم الكبير اللي طلبتو */
+  width: auto;
+  display: block;
+  margin: 0 auto 20px;
+  filter: drop-shadow(0 14px 30px rgba(0,0,0,.45));
+}
+
+/* Responsive */
+@media (max-width:600px){
+  .site-logo{ height: 60px; }
+  .hero__logo{ height: 220px; }
+}
+
 
 
 
