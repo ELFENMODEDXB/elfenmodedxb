@@ -238,3 +238,37 @@ input, textarea{
   .nav{ display:none; }
   .grid{ grid-template-columns:1fr; }
 }
+/* FIX: Best Sellers text overlapping */
+.product__info{
+  padding: 14px;
+}
+
+.product__info h3{
+  margin: 0 0 8px;
+  line-height: 1.25;
+}
+
+.product__info .muted{
+  margin: 0 0 12px;
+  line-height: 1.35;
+}
+
+.product__row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-top: 14px;
+}
+
+.price{
+  font-size: 18px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* keep button inside and clean */
+.product__row .btn{
+  white-space: nowrap;
+}
+
