@@ -52,3 +52,23 @@ const yearSpan = document.getElementById("y");
 if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
 }
+const menuBtn = document.getElementById("menuBtn");
+const siteNav = document.getElementById("siteNav");
+
+if (menuBtn && siteNav) {
+  menuBtn.addEventListener("click", () => {
+    const open = siteNav.classList.toggle("nav--open");
+    menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    menuBtn.textContent = open ? "✕" : "☰";
+  });
+
+  // كي يضغط على رابط، تسكر المينو
+  siteNav.querySelectorAll("a").forEach(a => {
+    a.addEventListener("click", () => {
+      siteNav.classList.remove("nav--open");
+      menuBtn.setAttribute("aria-expanded", "false");
+      menuBtn.textContent = "☰";
+    });
+  });
+}
+
