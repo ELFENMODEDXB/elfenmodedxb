@@ -71,4 +71,22 @@ if (menuBtn && siteNav) {
     });
   });
 }
+/* ===== Luxury Reveal Animation ===== */
+const revealTargets = document.querySelectorAll(
+  ".hero__text, .hero__card, .card, .product, .about__box, .form"
+);
+
+revealTargets.forEach(el => el.classList.add("reveal"));
+
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("is-visible");
+      obs.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+revealTargets.forEach(el => obs.observe(el));
+
 
