@@ -271,4 +271,9 @@ input, textarea{
 .product__row .btn{
   white-space: nowrap;
 }
+.product__img{
+  padding: 14px;
+  padding-bottom: 0;
+}
+
 
