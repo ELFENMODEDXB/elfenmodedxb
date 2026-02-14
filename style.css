@@ -430,6 +430,34 @@ input, textarea{
   opacity:1;
   transform: translateY(0);
 }
+/* Fix: hero card spacing (image + text) */
+.hero__img{
+  padding:18px;
+  padding-bottom:10px;   /* نقصنا شوية */
+}
+
+.img-placeholder{
+  height:210px;          /* كان 240 -> نقصناه باش ما يضغطش على النص */
+  border-radius:18px;
+}
+
+.hero__cardText{
+  padding:16px 18px 20px; /* كان 0 18px 18px */
+  border-top:1px solid rgba(197,164,170,.10); /* خط فخم يفصل */
+}
+
+.hero__cardText h3{
+  margin:0 0 8px;
+}
+
+.hero__cardText p{
+  margin:0 0 14px;       /* كان margin كبير يخليها تلصق */
+}
+
+.hero__cardText .btn{
+  margin-top:6px;
+}
+
 
 
 
