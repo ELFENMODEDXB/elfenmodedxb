@@ -10,21 +10,24 @@
 
   <!-- Top bar -->
   <header class="topbar">
-    <div class="container topbar__inner">
+  <div class="container topbar__inner">
+    <a class="brand" href="index.html">
+      <img src="logo.png" alt="EL FEN Logo" class="site-logo">
+    </a>
 
-      <!-- Logo -->
-      <a class="brand" href="#">
-        <img src="logo.png" alt="EL FEN Logo" class="site-logo">
-      </a>
+    <!-- زر المينو للموبايل -->
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+      ☰
+    </button>
 
-      <nav class="nav">
-        <a href="#collections">Collections</a>
-        <a href="#best">Best Sellers</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="nav__cta">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <nav class="nav" id="siteNav">
+      <a href="#collections">Collections</a>
+      <a href="#best">Best Sellers</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="nav__cta">Contact</a>
+    </nav>
+  </div>
+</header>
 
   <!-- Hero -->
   <section class="hero">
@@ -224,5 +227,6 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
