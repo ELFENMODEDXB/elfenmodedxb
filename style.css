@@ -457,6 +457,39 @@ input, textarea{
 .hero__cardText .btn{
   margin-top:6px;
 }
+/* Center + Bigger logo in hero */
+.hero__logoWrap{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:14px;
+}
+
+.hero__logo{
+  width:160px;     /* كبر/صغّر هنا */
+  height:auto;
+  filter: drop-shadow(0 10px 18px rgba(0,0,0,.45));
+  opacity:.95;
+}
+
+/* Center the pill under the logo */
+.hero__text .pill{
+  display:table;
+  margin:0 auto;
+}
+
+/* Optional: align hero text center (just the top part) */
+.hero__text h1,
+.hero__text .lead{
+  text-align:center;
+}
+.hero__actions{
+  justify-content:center;
+}
+.trust{
+  justify-content:center;
+}
+
 
 
 
