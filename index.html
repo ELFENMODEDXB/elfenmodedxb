@@ -10,59 +10,44 @@
 
   <!-- Top bar -->
   <header class="topbar">
-  <div class="container topbar__inner">
-    <a class="brand" href="index.html">
-      <img src="logo.png" alt="EL FEN Logo" class="site-logo">
-    </a>
+    <div class="container topbar__inner">
+      <!-- Logo (click يرجّع لفوق) -->
+      <a class="brand" href="#top" aria-label="Go to top">
+        <img src="logo.png" alt="EL FEN Logo" class="site-logo">
+      </a>
 
-    <!-- زر المينو للموبايل -->
-    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
-      ☰
-    </button>
+      <!-- زر المينو للموبايل -->
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        ☰
+      </button>
 
-    <nav class="nav" id="siteNav">
-      <a href="#collections">Collections</a>
-      <a href="#best">Best Sellers</a>
-      <a href="#about">About</a>
-      <a href="#contact" class="nav__cta">Contact</a>
-    </nav>
-  </div>
-</header>
+      <nav class="nav" id="siteNav">
+        <a href="#collections">Collections</a>
+        <a href="#best">Best Sellers</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav__cta">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <!-- Hero -->
- <div class="hero__text">
+  <!-- Anchor top -->
+  <div id="top"></div>
 
-  <!-- Center Logo -->
-  <div class="hero__logoWrap">
-    <img src="logo.png" alt="EL FEN Logo" class="hero__logo">
-  </div>
+  <!-- Hero (مرة وحدة فقط ✅) -->
+  <section class="hero">
+    <div class="container hero__inner">
 
-  <p class="pill">Luxury • Traditional • Made with Art</p>
+      <div class="hero__text">
 
-  <h1>EL FEN — where tradition becomes luxury.</h1>
-
-  <p class="lead">
-    Algerian & Maghreb traditional wear (Kaftans, Abayas, Robes) with a modern premium touch.
-  </p>
-
-  <div class="hero__actions">
-    <a class="btn btn--primary" href="#collections">Shop Collections</a>
-    <a class="btn btn--ghost" href="#contact">Request Custom Order</a>
-  </div>
-
-</div>
-
-
-      <!-- Center Logo -->
-      <div class="hero__logoWrap">
-        <img src="logo.png" alt="EL FEN Logo" class="hero__logo">
-      </div>
-
-      <p class="pill">Luxury • Traditional • Made with Art</p>
-      <h1>EL FEN — where tradition becomes luxury.</h1>
+        <!-- Center big logo -->
+        <div class="hero__logoWrap">
+          <img src="logo.png" alt="EL FEN Logo" class="hero__logo">
+        </div>
 
         <p class="pill">Luxury • Traditional • Made with Art</p>
+
         <h1>EL FEN — where tradition becomes luxury.</h1>
+
         <p class="lead">
           Algerian & Maghreb traditional wear (Kaftans, Abayas, Robes) with a modern premium touch.
         </p>
@@ -86,10 +71,12 @@
             <span class="trust__desc">Shipping options</span>
           </div>
         </div>
+
       </div>
 
       <div class="hero__card">
         <div class="hero__img">
+          <!-- من بعد تحط صورة هنا -->
           <div class="img-placeholder">Add Product Photo</div>
         </div>
         <div class="hero__cardText">
@@ -98,6 +85,7 @@
           <a class="btn btn--small" href="#best">See Best Sellers</a>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -219,12 +207,13 @@
            href="https://wa.me/971581585896?text=Hello%20EL%20FEN%2C%20I%20want%20to%20order%20a%20product.">
           Order on WhatsApp
         </a>
-       <p class="muted tiny">
-  Or email:
-  <a href="mailto:elfenmode@gmail.com" style="color:#E8D9DD;font-weight:700;text-decoration:none;">
-    elfenmode@gmail.com
-  </a>
-</p>
+
+        <p class="muted tiny">
+          Or email:
+          <a href="mailto:elfenmode@gmail.com" style="color:#E8D9DD;font-weight:700;text-decoration:none;">
+            elfenmode@gmail.com
+          </a>
+        </p>
       </div>
 
       <form class="form" onsubmit="return false;">
@@ -251,8 +240,5 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
 
 
