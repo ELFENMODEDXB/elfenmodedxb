@@ -489,6 +489,18 @@ input, textarea{
 .trust{
   justify-content:center;
 }
+.hero__logo{
+  width:170px;
+  margin:0 auto 20px;
+  display:block;
+  animation:fadeUp 1.2s ease;
+}
+
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(25px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
 
 
 
