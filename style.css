@@ -275,5 +275,37 @@ input, textarea{
   padding: 14px;
   padding-bottom: 0;
 }
+/* ===== LOGO SIZE FIX ===== */
+
+.brand img{
+  height: 60px;        /* حجم اللوغو في الديسكتوب */
+  width: auto;
+  display: block;
+}
+
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* لو تحب تكبّرو أكثر */
+@media (min-width: 1200px){
+  .brand img{
+    height: 75px;
+  }
+}
+
+/* موبايل */
+@media (max-width: 600px){
+  .brand img{
+    height: 45px;
+  }
+}
+.brand img{
+  height: 70px;
+  filter: drop-shadow(0 4px 12px rgba(197,164,170,.3));
+}
+
 
 
